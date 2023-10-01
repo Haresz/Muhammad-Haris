@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+p {
+  font-size: 18px;
+  color: #4a4a4a;
+}
+
+.container-contact img {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+}
