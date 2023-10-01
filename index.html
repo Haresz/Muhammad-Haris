@@ -7,7 +7,7 @@
   </head>
   <body class="bg-[#ECECEC]">
     <!-- Start Navbar -->
-    <nav class="mx-12">
+    <nav class="mx-12 fixed" style="top: 0; right: 0; left: 0">
       <div
         class="container bg-white mt-6 p-2 rounded-full shadow-2xl shadow-black lg:flex"
       >
@@ -24,11 +24,11 @@
           class="menu-selector px-[33%] bg-white mt-3 text-center absolute lg:w-1/2 lg:relative lg:px-0 lg:mt-0 lg:pt-1 menu"
         >
           <ul class="leading-[4] lg:flex lg:leading-none lg:justify-around">
-            <li><a class="" href="">Home</a></li>
-            <li><a href="">Portofolio</a></li>
-            <li><a href="">Skill</a></li>
-            <li><a href="">Certification</a></li>
-            <li><a href="">Contact-me</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#certification">Certification</a></li>
+            <li><a href="#contact-me">Contact-me</a></li>
           </ul>
         </div>
       </div>
@@ -36,7 +36,7 @@
     <!-- End Navbar -->
 
     <!-- Start About -->
-    <div class="container w-full lg:flex my-16 lg:my-28">
+    <div id="home" class="container w-full lg:flex my-16 lg:my-28">
       <div class="foto w-full flex justify-center lg:w-1/2">
         <img
           class="inline-block border-gray-400 ml-2"
@@ -74,7 +74,11 @@
     <!-- End About -->
 
     <!-- Start Portofolio -->
-    <div class="container bg-[#4A4D59] text-white" style="right: 0; left: 0">
+    <div
+      id="portofolio"
+      class="container bg-[#4A4D59] text-white"
+      style="right: 0; left: 0"
+    >
       <h1 class="flex justify-center py-7">MY POROTOFOLIO</h1>
       <div class="container-porto">
         <div class="container flex flex-wrap justify-evenly py-7 px-7 lg:px-0">
@@ -107,7 +111,7 @@
     <!-- End Portofolio -->
 
     <!-- Start MySkill -->
-    <div class="container bg-white py-7" style="right: 0; left: 0">
+    <div id="skill" class="container bg-white py-7" style="right: 0; left: 0">
       <h1 class="flex justify-center py-7">My SKILL</h1>
       <div class="container-porto">
         <div class="container flex flex-wrap justify-evenly py-14 px-7 lg:px-0">
@@ -127,8 +131,8 @@
     <!-- End MySkill -->
 
     <!-- Start Certification -->
-    <div class="container">
-      <h1 class="flex justify-center py-14">My SKILL</h1>
+    <div id="certification" class="container">
+      <h1 class="flex justify-center py-14">CERTIFICATION</h1>
       <div class="container-porto">
         <div class="container flex flex-wrap justify-evenly py-7 px-7 lg:px-0">
           <img
@@ -161,9 +165,17 @@
     <!-- End Certification -->
 
     <!-- Start Contact Us -->
-    <div class="container bg-white py-7" style="right: 0; left: 0">
+    <div
+      id="contact-me"
+      class="container bg-white py-7"
+      style="right: 0; left: 0"
+    >
       <h1 class="flex justify-center py-7">CONTACT ME</h1>
-      <form class="px-20" action="" method="post">
+      <form
+        class="px-20"
+        action="mailto:muhammadharisal259@gmail.com"
+        method="post"
+      >
         <div class="flex flex-col my-7">
           <label class="ml-1" for="name">Name*</label>
           <input
@@ -193,7 +205,7 @@
         </div>
         <input
           class="w-full mt-7 text-xl p-2 bg-gray-300 rounded-lg text-center"
-          type="button"
+          type="submit"
           value="SUBMIT"
         />
       </form>
@@ -207,11 +219,15 @@
           class="flex flex-wrap justify-center lg:justify-between pt-7 px-12 text-white"
         >
           <img width="80" src="dist/img/fikri.png" alt="" />
-          <div class="w-full lg:w-1.5 my-7 lg:mt-0">
+          <div
+            class="w-full lg:w-auto my-7 lg:mt-0 text-center lg:text-justify"
+          >
             <p class="text-white">Muhammad Haris Al Fikri</p>
             <h2>Front-end web</h2>
           </div>
-          <div class="w-full lg:w-1.5 my-7 lg:my-0">
+          <div
+            class="w-full lg:w-auto my-7 lg:my-0 text-center lg:text-justify"
+          >
             <h2 class="font-bold">Address</h2>
             <h2>Jepara - Jawa Tengah</h2>
             <h2>Indonesia</h2>
